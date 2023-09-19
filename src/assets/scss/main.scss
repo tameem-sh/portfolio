@@ -1,0 +1,61 @@
+@import "./variables/colors";
+@import "./variables/fonts";
+@import "./variables/constants";
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: $font2;
+    letter-spacing: 0.75px;
+}
+
+
+::selection {
+    background-color: $sky-color;
+    color: $white-color;
+    -webkit-text-stroke: 0;
+}
+/* Firefox */
+::-moz-selection {
+    background-color: $sky-color;
+    color: $white-color;
+    -webkit-text-stroke: 0;
+}
+/* WebKit-based browsers (Chrome, Safari, Opera) */
+::-webkit-selection {
+    background-color: $sky-color;
+    color: $white-color;
+    -webkit-text-stroke: 0;
+}
+
+
+@keyframes writing {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+[data-aos="writing-animation"] {
+    opacity: 0;
+    transition-property: all;
+
+    &.aos-animate {
+        opacity: 1;
+        animation: writing 1.5s forwards linear;
+    }
+    
+    @media screen and (max-width: 400px) {
+        opacity: 1 !important;
+        transition-property: all !important;
+    
+        &.aos-animate {
+            opacity: 1 !important;
+            animation: none !important;
+        }
+    }
+}

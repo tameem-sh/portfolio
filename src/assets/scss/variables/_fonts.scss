@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('@/assets/fonts/RobotoSlab.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('@/assets/fonts/Roboto.ttf');
+}
+
+
+$font1: 'Roboto', sans-serif;
+
+$font2: 'Roboto Slab', serif;
