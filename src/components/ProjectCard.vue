@@ -14,7 +14,7 @@
             <div :class="['description', (show ? 'show' : '')]">
                 <p>{{ description }}</p>
 
-                <a href="#" target="_blank">Demo</a>
+                <a :href="url" target="_blank">Demo</a>
             </div>
         </div>
 
@@ -29,6 +29,7 @@ const props = defineProps({
     title: String,
     img: String,
     description: String,
+    url: String,
 })
 
 const show = ref(false)
@@ -77,6 +78,7 @@ const show = ref(false)
                 opacity: 1;
                 transform: scale3d(1, 1, 1);
                 transition: all .4s linear;
+                background: rgba($secondary-bg, 0.6)
             }
     
             a {

@@ -9,6 +9,7 @@
                 :title="project.title"
                 :img="project.img"
                 :description="project.description"
+                :url="project.url"
             />
         </VContainer>
     </section>
@@ -19,19 +20,22 @@ import ProjectCard from '@/components/ProjectCard.vue';
 
 const projects = [
     {
-        title: "Test WebSite",
-        img: "/test.png",
-        description: "I'm a thing. But, like most politicians, he promised more than he could deliver",
+        title: "Doctors",
+        img: "/doctors.webp",
+        description: "This project link patients with doctors, hospitals, pharmacies and medicine warehouses. It's in development stage using Vu3, Django and Docker.",
+        url: "https://doctors.sy",
     },
     {
-        title: "Test WebSite",
-        img: "/test.png",
-        description: "I'm a thing. But, like most politicians, he promised more than he could deliver",
+        title: "Chat app",
+        img: "/chat app.webp",
+        description: "This project is Chat application in development stage using Vue3 and django.",
+        url: "https://tameem-chat-app.netlify.app/",
     },
     {
-        title: "Test WebSite",
-        img: "/test.png",
-        description: "I'm a thing. But, like most politicians, he promised more than he could deliver",
+        title: "Leon portfolio",
+        img: "/portfolio.webp",
+        description: "This project is portfolio by leon template for training to use html and css.",
+        url: "https://tameem-sh.github.io/Leon-portfolio/", 
     },
 ]
 </script>
