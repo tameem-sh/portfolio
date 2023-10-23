@@ -15,7 +15,8 @@
             <a class="button" href="/Tameem_Al-Shtaiwi_CV.pdf" download>Resume</a>
         </div>
         <div class="home-img">
-            <img src="@images/home.gif" alt="Home Image" />
+            <!-- <img src="@images/home.gif" alt="Home Image" /> -->
+            <img src="@images/R.png" alt="Home Image" />
         </div>
     </section>
 </template>
